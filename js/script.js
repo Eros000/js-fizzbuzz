@@ -1,25 +1,22 @@
 for (let number = 0 ; number <= 100 ; number ++){
-
-    console.log (number)
     
-    if (number % 3 == 0){
-
-        number='Fizz'
-        
-        console.log (number);
-        
-    }
-    else if (number % 5 == 0){
-
-        number='Buzz'
-        
-        console.log (number);
-
-    }
-    else if (number % 3 == 0 && number % 5 == 0){
+    if ((number % 3 == 0) && (number % 5 == 0)){
         
         console.log (number, 'FizzBuzz');
+    }
+    else if (number % 5 === 0){
+
+        console.log (number, 'Buzz');
+
+    }
+    else if (number % 3 === 0){
+
+        console.log (number, 'Fizz');
         
+    }
+        
+    else {
+        console.log(number);
     }
 }
 
